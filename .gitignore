@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated outputs (regenerate with: python generate_pdf.py)
+EXIM_DPR.pdf
+EXIM_DPR.html
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
