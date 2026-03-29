@@ -613,8 +613,8 @@ def main():
 
     full_html = build_full_html(cover_html, toc_html, policy_html, body_html)
 
-    # Save intermediate HTML for reference
-    html_path = os.path.join(SCRIPT_DIR, "EXIM_DPR.html")
+    # Save HTML — index.html for GitHub Pages serving
+    html_path = os.path.join(SCRIPT_DIR, "index.html")
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(full_html)
     print(f"       HTML saved to {html_path}")
