@@ -64,7 +64,6 @@ body {
 .cover-outer {
     background-color: #0f172a;
     background: linear-gradient(160deg, #0f172a 0%, #172554 45%, #0c4a6e 100%);
-    width: 210mm;
     min-height: 297mm;
     padding: 0;
     margin: 0;
