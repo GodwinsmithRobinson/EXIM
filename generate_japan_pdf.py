@@ -376,7 +376,8 @@ em {
 # 2. Read & pre-process the Markdown
 # ---------------------------------------------------------------------------
 
-def read_markdown(path):
+def read_markdown_file(path):
+    """Read a Markdown file from *path* and return its contents as a string."""
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
@@ -523,8 +524,12 @@ def md_to_html(md_text):
     html = html.replace('[ ]', '&#9744;')
     html = html.replace('[x]', '&#9745;')
     html = html.replace('[X]', '&#9745;')
-    # xhtml2pdf/reportlab crashes on empty <td></td> cells in wide tables;
-    # replace them with a non-breaking space so the cell has measurable width.
+    # xhtml2pdf/reportlab crashes with a ValueError ("negative availWidth") when a
+    # table with 4+ columns contains an empty <td></td> cell.  During column-width
+    # calculation reportlab divides the available width among columns; an empty cell
+    # gets width=0, and after subtracting leftPadding+rightPadding the result goes
+    # negative.  Replacing empty cells with a non-breaking space gives every cell a
+    # non-zero minimum width and prevents the crash.
     html = re.sub(r'<td>\s*</td>', '<td>&nbsp;</td>', html)
     return html
 
@@ -559,7 +564,7 @@ def build_full_html(cover, toc, callout, body_html):
 
 def main():
     print("[1/5] Reading JAPAN_ITINERARY.md ...")
-    raw_md = read_markdown(MD_PATH)
+    raw_md = read_markdown_file(MD_PATH)
 
     print("[2/5] Building Table of Contents ...")
     toc_items = build_toc_items(raw_md)
