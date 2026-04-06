@@ -1,0 +1,2435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Japan Family Travel Itinerary — 5 Days Tokyo</title>
+<style>
+
+/* ===================================================================
+   JAPAN ITINERARY — "SAKURA SUNSET" THEME
+   Palette: Deep Navy / Sakura Pink / Vermillion / Cream
+   Gradients degrade gracefully to solid colors in PDF
+   =================================================================== */
+
+@page {
+    size: A4;
+    margin: 25mm 20mm 28mm 20mm;
+
+    @frame footer {
+        -pdf-frame-content: page-footer;
+        bottom: 0mm;
+        margin-left: 20mm;
+        margin-right: 20mm;
+        height: 12mm;
+    }
+}
+
+@page coverpage {
+    size: A4;
+    margin: 0;
+    @frame footer { }
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.72;
+    color: #1e293b;
+}
+
+/* ---------- COVER PAGE ---------- */
+.cover-page {
+    -pdf-page-break: before;
+    page: coverpage;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-outer {
+    background-color: #1a1a2e;
+    background: linear-gradient(160deg, #1a1a2e 0%, #2d1b3d 45%, #8b1a2e 100%);
+    min-height: 297mm;
+    padding: 0;
+    margin: 0;
+}
+
+.cover-accent-bar {
+    background-color: #e8294e;
+    background: linear-gradient(90deg, #e8294e 0%, #f472b6 50%, #fbbf24 100%);
+    height: 5mm;
+    width: 100%;
+}
+
+.cover-content {
+    padding: 45mm 34mm 30mm 34mm;
+    text-align: center;
+}
+
+.cover-flag {
+    font-size: 56pt;
+    margin-bottom: 6mm;
+}
+
+.cover-title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 36pt;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin: 0 0 3mm 0;
+}
+
+.cover-title-sub {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #f9a8d4;
+    letter-spacing: 3px;
+    margin: 0 0 8mm 0;
+}
+
+.cover-subtitle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13pt;
+    color: #e2c4d4;
+    line-height: 2.0;
+    margin: 0 0 12mm 0;
+    letter-spacing: 0.5px;
+}
+
+.cover-divider {
+    width: 55mm;
+    height: 2px;
+    background-color: #e8294e;
+    background: linear-gradient(90deg, transparent, #e8294e, #f472b6, transparent);
+    margin: 0 auto 12mm auto;
+}
+
+.cover-meta {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #c4a3b5;
+    line-height: 2.4;
+}
+
+.cover-meta b {
+    color: #fbbf24;
+}
+
+.cover-badge {
+    margin-top: 20mm;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #f472b6;
+    letter-spacing: 2.5px;
+    border: 1.5px solid #f472b6;
+    border-radius: 4px;
+    padding: 3mm 12mm;
+    display: inline-block;
+}
+
+.cover-bottom-bar {
+    background-color: #e8294e;
+    background: linear-gradient(90deg, #e8294e, #f472b6, #fbbf24);
+    height: 3mm;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---------- TOC PAGE ---------- */
+.toc-page {
+    -pdf-page-break: before;
+}
+
+.toc-heading {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    color: #1a1a2e;
+    border-bottom: 3px solid #e8294e;
+    padding-bottom: 4mm;
+    margin-bottom: 8mm;
+}
+
+.toc-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.toc-table td {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    padding: 2mm 1.5mm;
+    border-bottom: 1px dotted #f9c4d4;
+    color: #334155;
+    vertical-align: top;
+}
+
+.toc-num {
+    width: 14mm;
+    font-weight: bold;
+    color: #be123c;
+    text-align: right;
+    padding-right: 2mm;
+    font-size: 10pt;
+}
+
+.toc-link {
+    color: #334155;
+    text-decoration: none;
+}
+
+/* ---------- INFO CALLOUT ---------- */
+.info-callout {
+    background-color: #fff1f5;
+    border-left: 5px solid #e8294e;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    padding: 5mm 7mm;
+    margin: 6mm 0 8mm 0;
+    font-size: 10pt;
+    line-height: 1.7;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    color: #1a1a2e;
+    border-bottom: 3px solid #e8294e;
+    padding-bottom: 3mm;
+    margin-top: 10mm;
+    margin-bottom: 6mm;
+    letter-spacing: 0.3px;
+    -pdf-keep-with-next: true;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #1a1a2e;
+    border-bottom: 2px solid #fce7f3;
+    border-left: 4px solid #e8294e;
+    padding-bottom: 2.5mm;
+    padding-left: 4mm;
+    margin-top: 9mm;
+    margin-bottom: 5mm;
+    -pdf-keep-with-next: true;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12.5pt;
+    font-weight: bold;
+    color: #9f1239;
+    margin-top: 7mm;
+    margin-bottom: 3mm;
+    -pdf-keep-with-next: true;
+}
+
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #475569;
+    margin-top: 5mm;
+    margin-bottom: 2.5mm;
+    -pdf-keep-with-next: true;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+p {
+    margin: 0 0 3.5mm 0;
+    text-align: justify;
+}
+
+/* ---------- BLOCKQUOTES ---------- */
+blockquote {
+    border-left: 4px solid #e8294e;
+    margin: 5mm 0;
+    padding: 4mm 6mm;
+    background-color: #fff1f5;
+    border-radius: 0 8px 8px 0;
+    color: #334155;
+    font-style: italic;
+    font-size: 10pt;
+}
+
+blockquote p { margin: 0 0 2mm 0; }
+
+/* ---------- TABLES ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5mm 0 7mm 0;
+    font-size: 8.5pt;
+    line-height: 1.5;
+}
+
+th {
+    background-color: #1a1a2e;
+    background: linear-gradient(135deg, #1a1a2e 0%, #3b1a3a 100%);
+    color: #f9e8ee;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 2mm 2mm;
+    text-align: left;
+    border: 1px solid #3b1a3a;
+    font-size: 8.5pt;
+    letter-spacing: 0.3px;
+}
+
+td {
+    padding: 1.5mm 2mm;
+    border: 1px solid #fce7f3;
+    vertical-align: top;
+    font-size: 8.5pt;
+}
+
+tr:nth-child(even) td {
+    background-color: #fff8fb;
+}
+
+/* ---------- LISTS ---------- */
+ul, ol {
+    margin: 3mm 0 5mm 0;
+    padding-left: 7mm;
+    font-size: 11pt;
+}
+
+li {
+    margin-bottom: 2mm;
+    line-height: 1.7;
+}
+
+/* ---------- TASK LIST (checkboxes) ---------- */
+ul li input[type="checkbox"] {
+    margin-right: 2mm;
+}
+
+/* ---------- HR ---------- */
+hr {
+    border: 0;
+    border-top: 2px solid #fce7f3;
+    margin: 7mm 0;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: #be123c;
+    text-decoration: none;
+}
+
+strong {
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+em {
+    color: #6b4a5a;
+}
+
+/* ---------- SECTION BREAK ---------- */
+.section-break {
+    -pdf-page-break: before;
+}
+
+/* ---------- PAGE FOOTER ---------- */
+#page-footer {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    color: #94a3b8;
+    text-align: center;
+    border-top: 1px solid #fce7f3;
+    padding-top: 2mm;
+}
+
+#page-footer .right-text {
+    float: right;
+    font-size: 8pt;
+    color: #cbd5e1;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="cover-page">
+        <div class="cover-outer">
+            <div class="cover-accent-bar"></div>
+            <div class="cover-content">
+                <div class="cover-flag">&#127471;&#127477;</div>
+                <div class="cover-title">JAPAN</div>
+                <div class="cover-title-sub">FAMILY TRAVEL ITINERARY</div>
+                <div class="cover-subtitle">
+                    5 Days &bull; 4 Nights &bull; Tokyo<br/>
+                    A Complete First International Trip Guide
+                </div>
+                <div class="cover-divider">&nbsp;</div>
+                <div class="cover-meta">
+                    <b>Travellers:</b> 2 Adults + 1 Child (7 yrs) + 1 Infant (7 months)<br/>
+                    <b>Trip Type:</b> First International Family Vacation<br/>
+                    <b>Highlights:</b> Tokyo Disneyland &bull; Asakusa &bull; Ueno Zoo &bull; Shibuya<br/><br/>
+                    <b>Prepared:</b> April 2026 &nbsp;|&nbsp; <b>Version:</b> 1.0
+                </div>
+                <br/><br/>
+                <div class="cover-badge">PROFESSIONALLY PLANNED &mdash; FAMILY TRAVEL</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="toc-page">
+        <div class="toc-heading">Table of Contents</div>
+        <table class="toc-table">
+            <tr><td class="toc-num">1.</td><td><a href="#sec-1" class="toc-link">Trip Overview & Essential Pre-Trip Information</a></td><td class="toc-num">9.</td><td><a href="#sec-9" class="toc-link">Day 5 — Shinjuku Garden, Last Shopping & Departure</a></td></tr>
+<tr><td class="toc-num">2.</td><td><a href="#sec-2" class="toc-link">Japan Visa & Entry Requirements</a></td><td class="toc-num">10.</td><td><a href="#sec-10" class="toc-link">Family & Baby-Friendly Food Guide</a></td></tr>
+<tr><td class="toc-num">3.</td><td><a href="#sec-3" class="toc-link">Flight & Airport Guide</a></td><td class="toc-num">11.</td><td><a href="#sec-11" class="toc-link">Getting Around Tokyo — Transport Guide</a></td></tr>
+<tr><td class="toc-num">4.</td><td><a href="#sec-4" class="toc-link">Accommodation Recommendations</a></td><td class="toc-num">12.</td><td><a href="#sec-12" class="toc-link">Baby & Child Travel Tips for Japan</a></td></tr>
+<tr><td class="toc-num">5.</td><td><a href="#sec-5" class="toc-link">Day 1 — Arrival, Airport Transfers & Tokyo Welcome</a></td><td class="toc-num">13.</td><td><a href="#sec-13" class="toc-link">Packing Checklist</a></td></tr>
+<tr><td class="toc-num">6.</td><td><a href="#sec-6" class="toc-link">Day 2 — Asakusa Temple, Ueno Zoo & Family Tokyo</a></td><td class="toc-num">14.</td><td><a href="#sec-14" class="toc-link">Complete Budget Breakdown</a></td></tr>
+<tr><td class="toc-num">7.</td><td><a href="#sec-7" class="toc-link">Day 3 — Tokyo Disneyland (Full Day)</a></td><td class="toc-num">15.</td><td><a href="#sec-15" class="toc-link">Emergency Contacts & Important Information</a></td></tr>
+<tr><td class="toc-num">8.</td><td><a href="#sec-8" class="toc-link">Day 4 — Odaiba, teamLab Planets & Shibuya</a></td><td></td><td></td></tr>
+
+        </table>
+    </div>
+    
+
+    <div class="info-callout">
+        <b>&#9992; First International Trip — Key Reminder:</b>
+        Apply for Japan Tourist Visa at the Embassy of Japan at least <b>4–6 weeks before travel.</b>
+        Purchase <b>Travel Insurance</b> covering all 4 family members (including infant) with minimum
+        USD 50,000 medical coverage. Carry <b>sufficient JPY cash</b> — Japan is still largely
+        a cash-first country. Book <b>Tokyo Disneyland tickets online</b> well in advance to avoid sellout.
+    </div>
+    
+<div class="section-break"></div>
+<p><a name="sec-1"></a></p>
+<h2 id="1-trip-overview-essential-pre-trip-information">1. Trip Overview &amp; Essential Pre-Trip Information</h2>
+<h3 id="why-japan-for-a-first-international-trip">Why Japan for a First International Trip?</h3>
+<p>Japan is one of the <strong>safest, cleanest and most family-friendly</strong> destinations in the world — an ideal first international trip. Trains run on the minute, hospitals are world-class, baby facilities exist in almost every public space, and the Japanese people are exceptionally kind and helpful to families with young children.</p>
+<h3 id="trip-snapshot">Trip Snapshot</h3>
+<table>
+<thead>
+<tr>
+<th>Detail</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Destination Country</td>
+<td>Japan 🇯🇵</td>
+</tr>
+<tr>
+<td>Primary City</td>
+<td>Tokyo</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>5 Days / 4 Nights</td>
+</tr>
+<tr>
+<td>Best Travel Months</td>
+<td>March–May (Cherry Blossoms) or Oct–Nov</td>
+</tr>
+<tr>
+<td>Adults (18+)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Child (4–11 yrs)</td>
+<td>1 (Age 7)</td>
+</tr>
+<tr>
+<td>Infant (0–3 yrs)</td>
+<td>1 (Age 7 months)</td>
+</tr>
+<tr>
+<td>Time Zone</td>
+<td>JST — UTC+9 (IST +3:30 hrs)</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>Japanese Yen (¥ / JPY)</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Japanese (English widely understood at tourist spots)</td>
+</tr>
+<tr>
+<td>Emergency Number</td>
+<td>110 (Police), 119 (Ambulance/Fire)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-japan-facts-for-first-time-visitors">Key Japan Facts for First-Time Visitors</h3>
+<ul>
+<li><strong>Safety:</strong> Japan is consistently ranked one of the world&rsquo;s safest countries. Crime rate is extremely low.</li>
+<li><strong>Cleanliness:</strong> Streets, toilets, trains and restaurants are impeccably clean — perfect for a 7-month baby.</li>
+<li><strong>Baby-Friendliness:</strong> Multi-functional nursing rooms (授乳室, <em>jyunyuushitsu</em>) are available in shopping malls, train stations, department stores and major attractions — always with diaper-changing tables, nursing chairs and a sink.</li>
+<li><strong>Cash Culture:</strong> Japan is still largely a cash society. Carry ¥10,000–¥20,000 in cash daily. You can withdraw from 7-Eleven and Japan Post ATMs using international Visa/Mastercard.</li>
+<li><strong>Tap Water:</strong> 100% safe to drink and use for mixing baby formula.</li>
+<li><strong>Electricity:</strong> 100V, Type A plugs (same as USA). Carry a universal adapter.</li>
+<li><strong>SIM / Internet:</strong> Buy a tourist data SIM at the airport (IIJmio, Rakuten, or B-Mobile) or rent a pocket Wi-Fi at arrival. Approximately ¥3,000–¥5,000 (~₹1,650–₹2,750) for 5 days.</li>
+</ul>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-2"></a></p>
+<h2 id="2-japan-visa-entry-requirements">2. Japan Visa &amp; Entry Requirements</h2>
+<h3 id="tourist-visa-for-indian-passport-holders">Tourist Visa for Indian Passport Holders</h3>
+<p>Indian passport holders require a visa to enter Japan. This is a <strong>single-entry tourist visa</strong> processed through the Embassy of Japan in India.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visa Type</td>
+<td>Tourist (Short-Stay — up to 90 days)</td>
+</tr>
+<tr>
+<td>Processing Time</td>
+<td>5–7 working days (apply at least 4–6 weeks before)</td>
+</tr>
+<tr>
+<td>Visa Fee</td>
+<td>No visa fee for Indian nationals (as of 2024)</td>
+</tr>
+<tr>
+<td>Where to Apply</td>
+<td>Embassy of Japan, New Delhi / Consulates in Mumbai, Chennai, Bengaluru, Kolkata, Osaka</td>
+</tr>
+<tr>
+<td>Application Method</td>
+<td>In-person at the embassy/consulate (no postal application)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="documents-required-for-tourist-visa">Documents Required for Tourist Visa</h3>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Valid Passport</td>
+<td>Valid for at least 6 months beyond travel dates; at least 2 blank pages</td>
+</tr>
+<tr>
+<td>Visa Application Form</td>
+<td>Download from Embassy of Japan website</td>
+</tr>
+<tr>
+<td>Recent Passport Photo</td>
+<td>45mm × 45mm white background, taken within 3 months</td>
+</tr>
+<tr>
+<td>Confirmed Round-Trip Flight Tickets</td>
+<td>Booking confirmation is sufficient</td>
+</tr>
+<tr>
+<td>Hotel Booking Confirmation</td>
+<td>Confirmed accommodation for all nights</td>
+</tr>
+<tr>
+<td>Travel Itinerary</td>
+<td>Day-by-day plan (this document can serve as the itinerary)</td>
+</tr>
+<tr>
+<td>Bank Statement</td>
+<td>Last 3–6 months showing sufficient funds (₹3–5 lakh+ recommended)</td>
+</tr>
+<tr>
+<td>Income Tax Returns</td>
+<td>Last 2–3 years ITR copies</td>
+</tr>
+<tr>
+<td>Employer Letter / Business Proof</td>
+<td>Leave letter and salary certificate (if employed) or GST/business registration</td>
+</tr>
+<tr>
+<td>Marriage Certificate</td>
+<td>For family applications</td>
+</tr>
+<tr>
+<td>Child&rsquo;s Birth Certificate</td>
+<td>For infant and child</td>
+</tr>
+<tr>
+<td>Travel Insurance</td>
+<td>Minimum USD 30,000 medical coverage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="important-visa-notes">Important Visa Notes</h3>
+<ul>
+<li>Apply <strong>for all family members separately</strong> — each person needs their own visa application.</li>
+<li>The infant (7 months) also requires a separate visa. Carry the birth certificate.</li>
+<li><strong>Travel Insurance is mandatory.</strong> Recommended coverage: ₹50 lakh (~USD 60,000) per person.</li>
+<li>Once visa is stamped, you will receive a <strong>sticker visa</strong> in your passport valid for 3 months from the date of issue.</li>
+</ul>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-3"></a></p>
+<h2 id="3-flight-airport-guide">3. Flight &amp; Airport Guide</h2>
+<h3 id="recommended-flight-routes-india-tokyo">Recommended Flight Routes (India → Tokyo)</h3>
+<p><strong>From Major Indian Cities to Tokyo (Narita NRT or Haneda HND):</strong></p>
+<table>
+<thead>
+<tr>
+<th>From City</th>
+<th>Airline Options</th>
+<th>Duration</th>
+<th>Approx. Round-Trip Cost (Per Adult)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delhi (DEL)</td>
+<td>Air India, ANA, JAL, IndiGo+connection</td>
+<td>~8–9 hrs direct / 11–13 hrs 1-stop</td>
+<td>₹55,000–₹90,000</td>
+</tr>
+<tr>
+<td>Mumbai (BOM)</td>
+<td>Air India, JAL, ANA, Singapore Airlines</td>
+<td>~9–10 hrs direct / 12–14 hrs 1-stop</td>
+<td>₹50,000–₹85,000</td>
+</tr>
+<tr>
+<td>Chennai (MAA)</td>
+<td>Air India, Singapore Airlines, Thai Airways</td>
+<td>10–13 hrs (1-stop)</td>
+<td>₹45,000–₹75,000</td>
+</tr>
+<tr>
+<td>Bangalore (BLR)</td>
+<td>Air Asia, IndiGo+JAL, Singapore Airlines</td>
+<td>10–14 hrs (1-stop)</td>
+<td>₹40,000–₹70,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Budget Tips:</strong>
+- Book <strong>3–4 months in advance</strong> for best fares.
+- Travel in <strong>shoulder season</strong> (September–November, or late January–February) for lowest airfares.
+- <strong>Infant (under 2 years):</strong> Travels free on lap (no seat) on most airlines on international flights. A small infant fare (10–15% of adult fare) may be charged. Confirm with your airline.
+- <strong>Request a bassinet seat</strong> (bulkhead row) when booking for the 7-month infant — especially important for a 9+ hour flight. Call the airline directly after booking.
+- <strong>Child aged 7:</strong> Full economy ticket required.
+- Pack a <strong>baby carrier / soft structured carrier</strong> for the flight and sightseeing.</p>
+<h3 id="tokyo-airports-which-one-to-use">Tokyo Airports — Which One to Use?</h3>
+<table>
+<thead>
+<tr>
+<th>Airport</th>
+<th>Code</th>
+<th>Distance to Central Tokyo</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Narita International</td>
+<td>NRT</td>
+<td>~60–80 km / 50–90 min by train</td>
+<td>Most international flights; larger airport</td>
+</tr>
+<tr>
+<td>Haneda International</td>
+<td>HND</td>
+<td>~15–25 km / 25–45 min by train</td>
+<td>More convenient; closer to Tokyo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommendation for families: Haneda (HND) is preferred</strong> — closer, easier navigation, shorter transfer time (important with a baby). However, most budget airlines land at Narita.</p>
+<h3 id="airport-to-hotel-transfer-options">Airport to Hotel Transfer Options</h3>
+<p><strong>From Narita Airport (NRT):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Duration</th>
+<th>Cost (Adult)</th>
+<th>Baby/Child Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Narita Express (N&rsquo;EX)</td>
+<td>~60 min to Shinjuku</td>
+<td>¥3,070 (~₹1,690)</td>
+<td>IC card or JR pass; luggage storage available</td>
+</tr>
+<tr>
+<td>Airport Limousine Bus</td>
+<td>~70–90 min to major hotels</td>
+<td>¥3,200 (~₹1,760)</td>
+<td>Baby on lap free; pre-book on website</td>
+</tr>
+<tr>
+<td>Private Taxi / Uber</td>
+<td>~90–120 min</td>
+<td>¥25,000–¥40,000 (~₹13,750–₹22,000)</td>
+<td>Safest for family with baby; car seat available on request</td>
+</tr>
+</tbody>
+</table>
+<p><strong>From Haneda Airport (HND):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Duration</th>
+<th>Cost (Adult)</th>
+<th>Baby/Child Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tokyo Monorail + Yamanote Line</td>
+<td>~30–45 min</td>
+<td>¥700–¥800 (~₹385–₹440)</td>
+<td>Budget-friendly; can be crowded</td>
+</tr>
+<tr>
+<td>Keikyu Line</td>
+<td>~30–40 min to Shinagawa</td>
+<td>¥620 (~₹341)</td>
+<td>Good option with luggage</td>
+</tr>
+<tr>
+<td>Private Taxi / Uber</td>
+<td>~30–45 min</td>
+<td>¥6,000–¥9,000 (~₹3,300–₹4,950)</td>
+<td>Recommended with baby and luggage</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pro Tip:</strong> At Narita and Haneda airports, you can rent a <strong>stroller</strong> right at the airport exit (coin-deposit type). Also available: luggage forwarding service (<em>takkyubin</em> / ヤマト運輸) — send your heavy luggage directly to the hotel for ¥1,500–¥2,500 per bag.</p>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-4"></a></p>
+<h2 id="4-accommodation-recommendations">4. Accommodation Recommendations</h2>
+<h3 id="what-to-look-for-in-a-family-hotel-in-tokyo">What to Look for in a Family Hotel in Tokyo</h3>
+<ul>
+<li><strong>Family Rooms (4-person beds/triple rooms)</strong> — essential since a double room is too small for 4 people</li>
+<li><strong>Baby crib / cot on request</strong> — most mid-range and premium hotels offer this free</li>
+<li><strong>Baby amenity kit</strong> — good hotels provide baby bath, baby shampoo, bibs, stroller rental</li>
+<li><strong>Location</strong> — stay near a major metro line (Shinjuku, Shibuya, Ueno, Asakusa zones)</li>
+<li><strong>Convenience stores nearby</strong> — 7-Eleven and FamilyMart sell baby formula, diapers, ready meals 24/7</li>
+</ul>
+<h3 id="recommended-hotels-family-friendly-options">Recommended Hotels — Family-Friendly Options</h3>
+<p><strong>Budget to Mid-Range (₹8,000–₹16,000/night for family room):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Hotel</th>
+<th>Area</th>
+<th>Family Room Cost/Night</th>
+<th>Why Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dormy Inn Tokyo Asakusa</td>
+<td>Asakusa</td>
+<td>¥18,000–¥25,000 (~₹9,900–₹13,750)</td>
+<td>Great location; Japanese onsen; baby-friendly; near Senso-ji</td>
+</tr>
+<tr>
+<td>Richmond Hotel Asakusa</td>
+<td>Asakusa</td>
+<td>¥20,000–¥28,000 (~₹11,000–₹15,400)</td>
+<td>Spacious family rooms; crib available; excellent transport links</td>
+</tr>
+<tr>
+<td>Keio Presso Inn Kabukicho</td>
+<td>Shinjuku</td>
+<td>¥16,000–¥22,000 (~₹8,800–₹12,100)</td>
+<td>Central Shinjuku; good value; near Disneyland bus stops</td>
+</tr>
+<tr>
+<td>APA Hotel Asakusa Taharamachi</td>
+<td>Asakusa</td>
+<td>¥14,000–¥18,000 (~₹7,700–₹9,900)</td>
+<td>Budget-friendly; compact but clean; great for families on budget</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Premium (₹18,000–₹35,000+/night):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Hotel</th>
+<th>Area</th>
+<th>Family Room Cost/Night</th>
+<th>Why Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hilton Tokyo</td>
+<td>Shinjuku</td>
+<td>¥40,000–¥65,000 (~₹22,000–₹35,750)</td>
+<td>Excellent baby amenities; English-speaking staff; pool</td>
+</tr>
+<tr>
+<td>Park Hyatt Tokyo</td>
+<td>Shinjuku</td>
+<td>¥70,000–¥120,000 (~₹38,500–₹66,000)</td>
+<td>Luxury; outstanding service; iconic Tokyo view</td>
+</tr>
+<tr>
+<td>Toyoko Inn Ueno Iriyaguchi</td>
+<td>Ueno</td>
+<td>¥16,000–¥22,000 (~₹8,800–₹12,100)</td>
+<td>Near Ueno Zoo; clean; good breakfast</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recommended-stay-best-value-for-money">Recommended Stay — Best Value for Money</h3>
+<blockquote>
+<p><strong>Dormy Inn Tokyo Asakusa</strong> or <strong>Richmond Hotel Asakusa</strong> for all 4 nights.
+- Convenient for Disneyland day trip (train/bus accessible)
+- Walking distance to Senso-ji Temple and Nakamise shopping
+- Baby-friendly facilities
+- Comfortable family rooms</p>
+</blockquote>
+<p><strong>Total Accommodation Cost (4 nights × ¥23,000):</strong> ¥92,000 (~₹50,600)</p>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-5"></a></p>
+<h2 id="5-day-1-arrival-airport-transfers-tokyo-welcome">5. Day 1 — Arrival, Airport Transfers &amp; Tokyo Welcome</h2>
+<h3 id="morning-afternoon-arrival">Morning / Afternoon: Arrival</h3>
+<p><strong>Recommended Arrival Time:</strong> Morning flight preferred so you arrive by midday.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On arrival</td>
+<td>Clear immigration</td>
+<td>Have all passports + return tickets + hotel booking ready</td>
+</tr>
+<tr>
+<td>On arrival</td>
+<td>Collect baggage</td>
+<td>Baby pram/stroller goes to oversized baggage belt</td>
+</tr>
+<tr>
+<td>Arrival lounge</td>
+<td>Buy SIM card / Pocket Wi-Fi</td>
+<td>Available immediately after customs exit; ¥3,500–¥5,000 for 5-day data</td>
+</tr>
+<tr>
+<td>Arrival lounge</td>
+<td>Get IC Card (Suica/Pasmo)</td>
+<td>Buy at JR machines or IC card counter; load ¥3,000–¥5,000</td>
+</tr>
+<tr>
+<td>Arrival lounge</td>
+<td>Exchange currency</td>
+<td>Exchange ₹15,000–₹20,000 into Yen at airport forex counter</td>
+</tr>
+<tr>
+<td>Airport exit</td>
+<td>Transfer to hotel</td>
+<td>See transport options in Section 3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evening-settle-in-gentle-exploration">Evening: Settle In &amp; Gentle Exploration</h3>
+<p>After a long international flight, Day 1 is about recovery and getting your bearings. Keep it simple!</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Location</th>
+<th>Approx. Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3:00 PM</td>
+<td>Hotel check-in</td>
+<td>Request baby crib; store luggage</td>
+<td>Included</td>
+</tr>
+<tr>
+<td>4:00 PM</td>
+<td>Short walk — Nakamise Shopping Street</td>
+<td>5-min walk from hotel (if staying in Asakusa)</td>
+<td>Free to browse</td>
+</tr>
+<tr>
+<td>5:00 PM</td>
+<td>Rest / baby nap</td>
+<td>Hotel</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6:30 PM</td>
+<td>Dinner — family-friendly Japanese restaurant</td>
+<td>Asakusa area</td>
+<td>¥5,000–¥8,000 for family (~₹2,750–₹4,400)</td>
+</tr>
+<tr>
+<td>8:00 PM</td>
+<td>Convenience store run</td>
+<td>7-Eleven near hotel — stock up on baby snacks, breakfast items</td>
+<td>¥2,000–¥3,000 (~₹1,100–₹1,650)</td>
+</tr>
+<tr>
+<td>9:00 PM</td>
+<td>Early sleep — adjust to JST</td>
+<td>Important with baby</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="day-1-budget-estimate">Day 1 Budget Estimate</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost (JPY)</th>
+<th>Cost (INR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Airport transfer (Limousine bus × 2 adults)</td>
+<td>¥6,400</td>
+<td>₹3,520</td>
+</tr>
+<tr>
+<td>SIM card / Wi-Fi</td>
+<td>¥4,500</td>
+<td>₹2,475</td>
+</tr>
+<tr>
+<td>IC Cards (2 adults × ¥2,000 each)</td>
+<td>¥4,000</td>
+<td>₹2,200</td>
+</tr>
+<tr>
+<td>Currency exchange (already included in total)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dinner</td>
+<td>¥7,000</td>
+<td>₹3,850</td>
+</tr>
+<tr>
+<td>Convenience store / supplies</td>
+<td>¥3,000</td>
+<td>₹1,650</td>
+</tr>
+<tr>
+<td><strong>Day 1 Total (excl. hotel)</strong></td>
+<td><strong>¥24,900</strong></td>
+<td><strong>~₹13,700</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-6"></a></p>
+<h2 id="6-day-2-asakusa-temple-ueno-zoo-family-tokyo">6. Day 2 — Asakusa Temple, Ueno Zoo &amp; Family Tokyo</h2>
+<h3 id="theme-cultural-tokyo-kid-friendly-attractions">Theme: Cultural Tokyo + Kid-Friendly Attractions</h3>
+<p>Day 2 is a gentle, enjoyable day exploring traditional Tokyo. The 7-year-old will love the temple atmosphere, zoo and street snacks. The baby will enjoy the sensory experiences and can nap in the pram.</p>
+<h3 id="detailed-schedule">Detailed Schedule</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Location</th>
+<th>Details</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7:30 AM</td>
+<td>Hotel breakfast</td>
+<td>At hotel or nearby café</td>
+<td>Many hotels offer Japanese/Western breakfast buffet</td>
+<td>¥2,000–¥4,000 per adult (or ₹1,100–₹2,200)</td>
+</tr>
+<tr>
+<td>9:00 AM</td>
+<td>Senso-ji Temple</td>
+<td>Asakusa</td>
+<td>Tokyo&rsquo;s oldest and most famous temple; Nakamise Street shopping; fortune slips</td>
+<td>Free entry</td>
+</tr>
+<tr>
+<td>10:00 AM</td>
+<td>Nakamise Shopping Street</td>
+<td>Asakusa</td>
+<td>Traditional souvenirs, samurai sweets, baby clothes, fans — great for kids</td>
+<td>¥2,000–¥4,000</td>
+</tr>
+<tr>
+<td>11:00 AM</td>
+<td>Sumida Park stroll</td>
+<td>5-min from Asakusa</td>
+<td>Beautiful along the Sumida River; great for pram walks</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>11:30 AM</td>
+<td>Train to Ueno</td>
+<td>Ginza Line (2 stops)</td>
+<td>¥200 per adult (~₹110)</td>
+<td>¥400 total</td>
+</tr>
+<tr>
+<td>12:00 PM</td>
+<td>Lunch — Ueno area</td>
+<td>Near Ueno Station</td>
+<td>Family udon restaurant; ¥800–¥1,200 per person</td>
+<td>¥4,000–¥5,000 for family</td>
+</tr>
+<tr>
+<td>1:00 PM</td>
+<td><strong>Ueno Zoo</strong></td>
+<td>Ueno Park</td>
+<td>Japan&rsquo;s oldest zoo — pandas, elephants, gorillas. The 7-year-old will absolutely love this! Baby-change stations inside.</td>
+<td>Adult ¥600 (~₹330), Child ¥200 (~₹110), Under 12: ¥200</td>
+</tr>
+<tr>
+<td>3:30 PM</td>
+<td>Ueno Park Walk</td>
+<td>Ueno</td>
+<td>Great open spaces; ice cream stalls; street performers; good for pram</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>4:30 PM</td>
+<td>Ameyoko Market</td>
+<td>Near Ueno Station</td>
+<td>Bustling open-air market — snacks, fresh food, goods; lively atmosphere</td>
+<td>¥500–¥1,500 for snacks</td>
+</tr>
+<tr>
+<td>5:30 PM</td>
+<td>Return to hotel</td>
+<td>Metro</td>
+<td>Rest time for baby</td>
+<td>¥400 per adult</td>
+</tr>
+<tr>
+<td>7:00 PM</td>
+<td>Dinner — Sushi or Ramen restaurant</td>
+<td>Asakusa / Hotel area</td>
+<td>Many family-friendly options; ramen is great for kids</td>
+<td>¥6,000–¥9,000 for family (~₹3,300–₹4,950)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="baby-notes-day-2">Baby Notes — Day 2</h3>
+<ul>
+<li><strong>Ueno Zoo</strong> has <strong>baby care rooms</strong> with nursing chairs, diaper tables and warming stations.</li>
+<li><strong>Pram-friendly:</strong> Senso-ji, Ueno Park and Ameyoko Market are all stroller-accessible.</li>
+<li><strong>Feeding:</strong> Carry pre-made formula + snacks. Convenience stores sell baby-friendly foods and bottled warm water (ask staff to warm).</li>
+<li><strong>Nap:</strong> Schedule a 30–45 min pram nap around 2:00–3:00 PM.</li>
+</ul>
+<h3 id="day-2-budget-estimate">Day 2 Budget Estimate</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost (JPY)</th>
+<th>Cost (INR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Breakfast (family)</td>
+<td>¥4,500</td>
+<td>₹2,475</td>
+</tr>
+<tr>
+<td>Metro travel (× 2 adults, multiple trips)</td>
+<td>¥1,600</td>
+<td>₹880</td>
+</tr>
+<tr>
+<td>Ueno Zoo entry (2 adults + 1 child + infant free)</td>
+<td>¥1,400</td>
+<td>₹770</td>
+</tr>
+<tr>
+<td>Lunch</td>
+<td>¥4,500</td>
+<td>₹2,475</td>
+</tr>
+<tr>
+<td>Snacks / Nakamise shopping</td>
+<td>¥3,000</td>
+<td>₹1,650</td>
+</tr>
+<tr>
+<td>Dinner</td>
+<td>¥7,500</td>
+<td>₹4,125</td>
+</tr>
+<tr>
+<td>Miscellaneous</td>
+<td>¥1,000</td>
+<td>₹550</td>
+</tr>
+<tr>
+<td><strong>Day 2 Total (excl. hotel)</strong></td>
+<td><strong>¥23,500</strong></td>
+<td><strong>~₹12,925</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-7"></a></p>
+<h2 id="7-day-3-tokyo-disneyland-full-day">7. Day 3 — Tokyo Disneyland (Full Day)</h2>
+<h3 id="the-highlight-of-your-trip">The Highlight of Your Trip!</h3>
+<p>Tokyo Disneyland is widely considered the <strong>world&rsquo;s best Disneyland</strong> — it is cleaner, more organised and more magical than any other Disney park globally. For your 7-year-old, this will be an unforgettable experience.</p>
+<blockquote>
+<p><strong>Important:</strong> Tokyo Disneyland and Tokyo DisneySea are operated by Oriental Land Company (OLC), not Disney US. Tickets must be booked online in advance — walk-up purchase is possible but can lead to sellouts on peak days.</p>
+</blockquote>
+<h3 id="getting-to-tokyo-disneyland">Getting to Tokyo Disneyland</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>From</th>
+<th>Duration</th>
+<th>Cost per Adult</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JR Keiyo Line or Musashino Line</td>
+<td>Tokyo Station → Maihama Station</td>
+<td>~15 min</td>
+<td>¥230 (~₹127)</td>
+</tr>
+<tr>
+<td>Taxi / Uber</td>
+<td>Asakusa area</td>
+<td>~45–60 min</td>
+<td>¥5,000–¥8,000 (~₹2,750–₹4,400)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Maihama Station</strong> is the gateway station. Tokyo Disneyland Resort is a 5-minute walk or free Disney Resort Line monorail ride from there.</p>
+<h3 id="tokyo-disneyland-20242025-ticket-prices">Tokyo Disneyland — 2024/2025 Ticket Prices</h3>
+<table>
+<thead>
+<tr>
+<th>Guest Type</th>
+<th>Age</th>
+<th>Day Passport (1 Day)</th>
+<th>Cost (INR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adult</td>
+<td>18+</td>
+<td>¥9,400 (~weekday) – ¥10,900 (~peak)</td>
+<td>₹5,170–₹5,995</td>
+</tr>
+<tr>
+<td>Junior</td>
+<td>12–17</td>
+<td>¥8,300 (~weekday) – ¥9,800 (~peak)</td>
+<td>₹4,565–₹5,390</td>
+</tr>
+<tr>
+<td>Child</td>
+<td>4–11</td>
+<td>¥5,600 (~weekday) – ¥6,500 (~peak)</td>
+<td>₹3,080–₹3,575</td>
+</tr>
+<tr>
+<td>Infant</td>
+<td>0–3</td>
+<td><strong>FREE</strong></td>
+<td>₹0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For your family (2 Adults + 1 Child aged 7 + 1 Infant aged 7 months):</strong>
+- 2 Adults × ¥9,400 = ¥18,800
+- 1 Child × ¥5,600 = ¥5,600
+- 1 Infant = FREE
+- <strong>Total Disneyland Tickets: ¥24,400 (~₹13,420)</strong></p>
+<h3 id="how-to-buy-tickets">How to Buy Tickets</h3>
+<ol>
+<li><strong>Tokyo Disney Resort Official Website:</strong> tokyodisneyresort.jp (select English)</li>
+<li><strong>KKday / Klook / Voyagin</strong> (third-party booking platforms — often have INR pricing and Indian payment gateway support)</li>
+<li><strong>Purchase dates:</strong> Open 90 days in advance — buy early for preferred date!</li>
+</ol>
+<h3 id="recommended-day-plan-tokyo-disneyland">Recommended Day Plan — Tokyo Disneyland</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7:30 AM</td>
+<td>Hotel breakfast</td>
+<td>Light and early</td>
+</tr>
+<tr>
+<td>8:30 AM</td>
+<td>Depart for Maihama</td>
+<td>Train from nearest station</td>
+</tr>
+<tr>
+<td>9:00 AM</td>
+<td>Disneyland gates open</td>
+<td>Arrive before opening for shorter entry queues</td>
+</tr>
+<tr>
+<td>9:00–10:30 AM</td>
+<td>Fantasyland</td>
+<td>Cinderella Castle; Dumbo; Pooh&rsquo;s Hunny Hunt (great for 7-yr-old)</td>
+</tr>
+<tr>
+<td>10:30 AM</td>
+<td>Tomorrowland</td>
+<td>Buzz Lightyear&rsquo;s Astro Blasters (7-yr-old loves!)</td>
+</tr>
+<tr>
+<td>12:00 PM</td>
+<td>Lunch in park</td>
+<td>Disney-themed bento boxes, burgers, character meals (book character dining in advance!)</td>
+</tr>
+<tr>
+<td>1:00–2:30 PM</td>
+<td>Baby care center break</td>
+<td>Feed infant; diaper change; rest in nursing room</td>
+</tr>
+<tr>
+<td>2:30 PM</td>
+<td>Parade / Afternoon show</td>
+<td>Tokyo Disneyland parade is spectacular — find a good spot 30 min early</td>
+</tr>
+<tr>
+<td>3:30 PM</td>
+<td>Adventureland</td>
+<td>Pirates of the Caribbean; Jungle Cruise</td>
+</tr>
+<tr>
+<td>5:00 PM</td>
+<td>Westernland</td>
+<td>Big Thunder Mountain (if 7-yr-old is ready for thrills!)</td>
+</tr>
+<tr>
+<td>6:30 PM</td>
+<td>Dinner in park</td>
+<td>Choose from sit-down restaurants inside park</td>
+</tr>
+<tr>
+<td>7:30 PM</td>
+<td>Electrical Parade / Night show</td>
+<td>One of the most magical experiences in Tokyo!</td>
+</tr>
+<tr>
+<td>9:00 PM</td>
+<td>Exit park</td>
+<td>Head back to hotel via Maihama Station</td>
+</tr>
+<tr>
+<td>10:30 PM</td>
+<td>Arrive hotel, sleep</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="baby-care-at-tokyo-disneyland">Baby Care at Tokyo Disneyland</h3>
+<p>Tokyo Disneyland has <strong>world-class baby care facilities:</strong>
+- <strong>Baby Care Center</strong> located near Tomorrowland and Main Street
+- Private nursing rooms with comfortable chairs
+- Diaper changing tables in all restrooms (including men&rsquo;s!)
+- Microwave to warm baby food
+- Disposable diapers, wipes and baby food available for purchase at Baby Care Center
+- <strong>Stroller rental:</strong> ¥1,000/day at main entrance
+- <strong>Stroller parking zones</strong> throughout the park — park and continue on foot</p>
+<h3 id="height-restrictions-key-rides">Height Restrictions (Key Rides)</h3>
+<table>
+<thead>
+<tr>
+<th>Ride</th>
+<th>Minimum Height</th>
+<th>Suitable for 7-yr-old?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Big Thunder Mountain</td>
+<td>102 cm</td>
+<td>✅ Yes (if ≥102 cm)</td>
+</tr>
+<tr>
+<td>Splash Mountain</td>
+<td>90 cm</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Space Mountain</td>
+<td>102 cm</td>
+<td>✅ Yes (if ≥102 cm)</td>
+</tr>
+<tr>
+<td>Haunted Mansion</td>
+<td>None</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Pirates of the Caribbean</td>
+<td>None</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Buzz Lightyear Astro Blasters</td>
+<td>None</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Star Wars Hyperspace Mountain</td>
+<td>102 cm</td>
+<td>✅ Yes (if ≥102 cm)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="day-3-budget-estimate">Day 3 Budget Estimate</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost (JPY)</th>
+<th>Cost (INR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Train (2 adults return to Maihama)</td>
+<td>¥920</td>
+<td>₹506</td>
+</tr>
+<tr>
+<td>Disneyland entry (2 adults + 1 child, infant free)</td>
+<td>¥24,400</td>
+<td>₹13,420</td>
+</tr>
+<tr>
+<td>Breakfast (hotel / outside)</td>
+<td>¥4,000</td>
+<td>₹2,200</td>
+</tr>
+<tr>
+<td>Lunch inside Disneyland</td>
+<td>¥8,000</td>
+<td>₹4,400</td>
+</tr>
+<tr>
+<td>Dinner inside Disneyland</td>
+<td>¥7,000</td>
+<td>₹3,850</td>
+</tr>
+<tr>
+<td>Snacks &amp; drinks inside park</td>
+<td>¥5,000</td>
+<td>₹2,750</td>
+</tr>
+<tr>
+<td>Disney merchandise / souvenirs</td>
+<td>¥5,000–¥10,000</td>
+<td>₹2,750–₹5,500</td>
+</tr>
+<tr>
+<td>Stroller rental</td>
+<td>¥1,000</td>
+<td>₹550</td>
+</tr>
+<tr>
+<td><strong>Day 3 Total (excl. hotel)</strong></td>
+<td><strong>¥55,320–¥60,320</strong></td>
+<td><strong>~₹30,426–₹33,176</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-8"></a></p>
+<h2 id="8-day-4-odaiba-teamlab-planets-shibuya">8. Day 4 — Odaiba, teamLab Planets &amp; Shibuya</h2>
+<h3 id="theme-modern-tokyo-art-energy">Theme: Modern Tokyo + Art + Energy</h3>
+<p>Day 4 balances futuristic Tokyo with the city&rsquo;s most iconic scramble crossing. The teamLab digital art museum is a magical, immersive experience that children (and adults!) find breathtaking.</p>
+<h3 id="detailed-schedule_1">Detailed Schedule</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Location</th>
+<th>Details</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8:00 AM</td>
+<td>Breakfast</td>
+<td>Hotel or nearby</td>
+<td>Japanese breakfast set or convenience store</td>
+<td>¥3,000–¥4,500 for family</td>
+</tr>
+<tr>
+<td>9:30 AM</td>
+<td>Travel to Odaiba</td>
+<td>Yurikamome Line from Shimbashi</td>
+<td>30 min; scenic elevated rail over Rainbow Bridge</td>
+<td>¥400 per adult (~₹220)</td>
+</tr>
+<tr>
+<td>10:00 AM</td>
+<td><strong>teamLab Planets</strong></td>
+<td>Toyosu, Tokyo</td>
+<td>Immersive digital art walk-through; barefoot; stunning for all ages. MUST BOOK ONLINE IN ADVANCE!</td>
+<td>Adult ¥3,200 (~₹1,760); Child (4–12) ¥1,000 (~₹550); Under 3: Free</td>
+</tr>
+<tr>
+<td>12:00 PM</td>
+<td>Lunch — DiverCity Tokyo Plaza</td>
+<td>Odaiba</td>
+<td>Large mall with many family-friendly restaurants including Gundam statue area</td>
+<td>¥4,000–¥6,000 for family</td>
+</tr>
+<tr>
+<td>1:30 PM</td>
+<td>Odaiba Beach &amp; Palette Town</td>
+<td>Odaiba</td>
+<td>Free beach park; views of Rainbow Bridge; baby-friendly open spaces; fun for 7-yr-old to run around</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>3:00 PM</td>
+<td>Travel to Shibuya</td>
+<td>Train (30 min)</td>
+<td>¥400 per adult</td>
+<td>¥800</td>
+</tr>
+<tr>
+<td>3:30 PM</td>
+<td><strong>Shibuya Scramble Crossing</strong></td>
+<td>Shibuya</td>
+<td>The world&rsquo;s most famous pedestrian crossing — cross it, photograph it, enjoy!</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>4:00 PM</td>
+<td><strong>Shibuya Sky Observatory</strong></td>
+<td>Shibuya Scramble Square</td>
+<td>47th-floor open-air observation deck — stunning 360° Tokyo views. Sunset timing perfect!</td>
+<td>Adult ¥2,000 (~₹1,100); Child ¥1,200 (~₹660); Under 3: Free</td>
+</tr>
+<tr>
+<td>5:30 PM</td>
+<td>Shopping — Tokyu Hands or Don Quijote</td>
+<td>Shibuya</td>
+<td>Souvenirs, Japanese gadgets, kids&rsquo; items</td>
+<td>¥3,000–¥6,000</td>
+</tr>
+<tr>
+<td>7:00 PM</td>
+<td>Dinner — Shibuya / Harajuku</td>
+<td>Shibuya area</td>
+<td>Wide variety — sushi, ramen, teppanyaki, family restaurants</td>
+<td>¥6,000–¥10,000 for family</td>
+</tr>
+<tr>
+<td>9:00 PM</td>
+<td>Return to hotel</td>
+<td>Train</td>
+<td>&nbsp;</td>
+<td>¥600–¥800</td>
+</tr>
+</tbody>
+</table>
+<h3 id="baby-notes-day-4">Baby Notes — Day 4</h3>
+<ul>
+<li><strong>teamLab Planets</strong> requires walking barefoot through water installations (~10 cm deep). The 7-month baby should be carried in a baby carrier (not pram). The staff will help — inform them on arrival.</li>
+<li><strong>Shibuya Scramble</strong> can be overwhelming — keep baby in carrier or pram; use the pedestrian crossing before 6 PM to avoid extreme crowds.</li>
+<li>Baby facilities available at all major malls in Odaiba and Shibuya department stores.</li>
+</ul>
+<h3 id="day-4-budget-estimate">Day 4 Budget Estimate</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost (JPY)</th>
+<th>Cost (INR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Breakfast (family)</td>
+<td>¥4,000</td>
+<td>₹2,200</td>
+</tr>
+<tr>
+<td>Train travel (all day)</td>
+<td>¥3,200</td>
+<td>₹1,760</td>
+</tr>
+<tr>
+<td>teamLab Planets (2 adults + 1 child, infant free)</td>
+<td>¥7,400</td>
+<td>₹4,070</td>
+</tr>
+<tr>
+<td>Lunch</td>
+<td>¥5,500</td>
+<td>₹3,025</td>
+</tr>
+<tr>
+<td>Shibuya Sky Observatory (2 adults + 1 child)</td>
+<td>¥5,200</td>
+<td>₹2,860</td>
+</tr>
+<tr>
+<td>Dinner</td>
+<td>¥8,000</td>
+<td>₹4,400</td>
+</tr>
+<tr>
+<td>Shopping / Souvenirs</td>
+<td>¥5,000</td>
+<td>₹2,750</td>
+</tr>
+<tr>
+<td><strong>Day 4 Total (excl. hotel)</strong></td>
+<td><strong>¥38,300</strong></td>
+<td><strong>~₹21,065</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-9"></a></p>
+<h2 id="9-day-5-shinjuku-garden-last-shopping-departure">9. Day 5 — Shinjuku Garden, Last Shopping &amp; Departure</h2>
+<h3 id="theme-relaxed-morning-goodbye-tokyo">Theme: Relaxed Morning + Goodbye Tokyo</h3>
+<p>Keep Day 5 light — you have a flight to catch. Check flight time and work backwards. For flights departing after 5:00 PM, the morning schedule below works well.</p>
+<h3 id="detailed-schedule-for-afternoonevening-departure-flights">Detailed Schedule (for afternoon/evening departure flights)</h3>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Location</th>
+<th>Details</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7:00 AM</td>
+<td>Final hotel breakfast</td>
+<td>Hotel</td>
+<td>Last Japanese breakfast!</td>
+<td>¥2,000–¥4,000</td>
+</tr>
+<tr>
+<td>8:30 AM</td>
+<td>Hotel checkout / luggage storage</td>
+<td>Hotel</td>
+<td>Most hotels store luggage until departure time</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>9:00 AM</td>
+<td><strong>Shinjuku Gyoen National Garden</strong></td>
+<td>Shinjuku</td>
+<td>Japan&rsquo;s most beautiful urban garden — roses, Japanese garden, greenhouse with baby-friendly wide paths</td>
+<td>Adult ¥500 (~₹275); Child Free (under 15); Under 6: Free</td>
+</tr>
+<tr>
+<td>10:30 AM</td>
+<td>Shinjuku Station area shopping</td>
+<td>Shinjuku</td>
+<td>Last-minute shopping: Takashimaya Times Square, Yodobashi Camera (electronics), cosmetics</td>
+<td>¥5,000–¥15,000</td>
+</tr>
+<tr>
+<td>12:00 PM</td>
+<td>Lunch — Shinjuku</td>
+<td>Shinjuku</td>
+<td>Many restaurants from quick to sit-down</td>
+<td>¥4,000–¥6,000</td>
+</tr>
+<tr>
+<td>1:30 PM</td>
+<td>Collect luggage from hotel</td>
+<td>Hotel</td>
+<td>Head back to hotel for bags</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2:30 PM</td>
+<td>Depart for airport</td>
+<td>Hotel → Shinjuku Station → NRT/HND</td>
+<td>Narita Express or Limousine Bus</td>
+<td>¥3,070 per adult (~₹1,690)</td>
+</tr>
+<tr>
+<td>4:30 PM</td>
+<td>Arrive Narita Airport</td>
+<td>NRT</td>
+<td>Aim to arrive 3 hours before international departure</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5:00 PM+</td>
+<td>Airport duty-free shopping</td>
+<td>Airport</td>
+<td>Japanese whisky, Kit Kats, cosmetics, baby goods</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Evening</td>
+<td>Depart Tokyo</td>
+<td>NRT/HND</td>
+<td>Safe travels!</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="day-5-budget-estimate">Day 5 Budget Estimate</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost (JPY)</th>
+<th>Cost (INR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Breakfast (family)</td>
+<td>¥3,500</td>
+<td>₹1,925</td>
+</tr>
+<tr>
+<td>Shinjuku Gyoen entry (2 adults)</td>
+<td>¥1,000</td>
+<td>₹550</td>
+</tr>
+<tr>
+<td>Lunch</td>
+<td>¥5,000</td>
+<td>₹2,750</td>
+</tr>
+<tr>
+<td>Shopping / gifts</td>
+<td>¥10,000</td>
+<td>₹5,500</td>
+</tr>
+<tr>
+<td>Airport transfer (2 adults, N&rsquo;EX)</td>
+<td>¥6,140</td>
+<td>₹3,377</td>
+</tr>
+<tr>
+<td>Airport meals/snacks</td>
+<td>¥3,000</td>
+<td>₹1,650</td>
+</tr>
+<tr>
+<td><strong>Day 5 Total (excl. hotel)</strong></td>
+<td><strong>¥28,640</strong></td>
+<td><strong>~₹15,752</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-10"></a></p>
+<h2 id="10-family-baby-friendly-food-guide">10. Family &amp; Baby-Friendly Food Guide</h2>
+<h3 id="eating-in-japan-with-a-7-year-old-and-a-7-month-baby">Eating in Japan with a 7-Year-Old and a 7-Month Baby</h3>
+<p>Japan is one of the <strong>best countries in the world for food</strong> — and extremely family-friendly. Restaurants here welcome children, and many have dedicated children&rsquo;s menus, high chairs and even toy corners.</p>
+<h3 id="food-safety-for-the-baby-7-months">Food Safety for the Baby (7 Months)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Safe?</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Japanese baby formula (Morinaga, Meiji, Glico)</td>
+<td>✅ Yes</td>
+<td>Available in pharmacies and supermarkets; choose stage-appropriate</td>
+</tr>
+<tr>
+<td>Jarred Japanese baby food (Kewpie brand)</td>
+<td>✅ Yes</td>
+<td>Available at pharmacies, AEON supermarkets; rice porridge, vegetable puree options</td>
+</tr>
+<tr>
+<td>Plain white rice / rice porridge (Okayu)</td>
+<td>✅ Yes</td>
+<td>Ask restaurants for plain rice porridge; widely available</td>
+</tr>
+<tr>
+<td>Tap water for formula mixing</td>
+<td>✅ Yes</td>
+<td>100% safe; convenience stores also sell mineral water</td>
+</tr>
+<tr>
+<td>Miso soup (plain, without soy sauce excess)</td>
+<td>⚠️ Limited</td>
+<td>Light miso broth is OK; avoid if salt-restricted diet</td>
+</tr>
+</tbody>
+</table>
+<h3 id="must-try-foods-for-the-family-7-year-old-safe">Must-Try Foods for the Family (7-Year-Old Safe)</h3>
+<table>
+<thead>
+<tr>
+<th>Dish</th>
+<th>Type</th>
+<th>Where to Find</th>
+<th>Cost (per person)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ramen</td>
+<td>Noodle soup</td>
+<td>Ichiran, Ippudo, local shops</td>
+<td>¥900–¥1,500 (~₹495–₹825)</td>
+</tr>
+<tr>
+<td>Sushi (conveyor belt)</td>
+<td>Sushi</td>
+<td>Kura Sushi, Sushiro, Hamazushi</td>
+<td>¥1,000–¥2,500 (~₹550–₹1,375)</td>
+</tr>
+<tr>
+<td>Udon</td>
+<td>Thick noodles</td>
+<td>Marugame Udon, local shops</td>
+<td>¥400–¥900 (~₹220–₹495)</td>
+</tr>
+<tr>
+<td>Tonkatsu</td>
+<td>Breaded pork cutlet</td>
+<td>Maisen, Saboten</td>
+<td>¥1,200–¥2,000 (~₹660–₹1,100)</td>
+</tr>
+<tr>
+<td>Okonomiyaki</td>
+<td>Japanese pancake</td>
+<td>Wheatfields, local spots</td>
+<td>¥1,000–¥1,800 (~₹550–₹990)</td>
+</tr>
+<tr>
+<td>Karaage</td>
+<td>Japanese fried chicken</td>
+<td>7-Eleven, family restaurants</td>
+<td>¥250–¥600 (~₹138–₹330)</td>
+</tr>
+<tr>
+<td>Tempura</td>
+<td>Deep-fried seafood/veg</td>
+<td>Tendon Tenya, Tsunahachi</td>
+<td>¥1,200–¥2,500 (~₹660–₹1,375)</td>
+</tr>
+<tr>
+<td>Matcha soft serve ice cream</td>
+<td>Dessert</td>
+<td>Everywhere in tourist areas</td>
+<td>¥350–¥600 (~₹193–₹330)</td>
+</tr>
+<tr>
+<td>Taiyaki</td>
+<td>Fish-shaped waffle cake</td>
+<td>Street stalls in Asakusa, Harajuku</td>
+<td>¥200–¥300 (~₹110–₹165)</td>
+</tr>
+<tr>
+<td>Disney food (in park)</td>
+<td>Various</td>
+<td>Tokyo Disneyland restaurants</td>
+<td>¥1,500–¥3,500 per person</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vegetarian-indian-dietary-notes">Vegetarian &amp; Indian Dietary Notes</h3>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vegetarian options</td>
+<td>Many ramen/udon shops offer vegetable broth; Buddhist vegetarian (Shojin Ryori) restaurants available; sushi vegetables rolls OK</td>
+</tr>
+<tr>
+<td>Halal food</td>
+<td>Halal restaurants available in Asakusa, Shibuya, Shinjuku areas; look for Halal certification sign</td>
+</tr>
+<tr>
+<td>Indian food craving</td>
+<td>Indian restaurants available in Shinjuku (Nishiki-cho area) and Roppongi for familiar comfort food</td>
+</tr>
+<tr>
+<td>Food allergies</td>
+<td>Japan takes allergies seriously; show allergy card in Japanese (download from AllergyTranslation.com)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="convenience-store-meals-lifesaver-for-families">Convenience Store Meals (Lifesaver for Families!)</h3>
+<ul>
+<li><strong>7-Eleven, FamilyMart, Lawson</strong> — open 24/7, available within 200m everywhere</li>
+<li>Onigiri (rice balls): ¥120–¥200 | Sandwiches: ¥200–¥350 | Hot foods: ¥150–¥400</li>
+<li>Baby food, formula, diapers, wipes — all available at convenience stores</li>
+<li>Use the microwave at the counter for free warming of any purchased hot food</li>
+</ul>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-11"></a></p>
+<h2 id="11-getting-around-tokyo-transport-guide">11. Getting Around Tokyo — Transport Guide</h2>
+<h3 id="ic-card-suica-pasmo-your-tokyo-travel-key">IC Card (Suica / Pasmo) — Your Tokyo Travel Key</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What it is</td>
+<td>Pre-loaded rechargeable smart card used on all trains, buses, some taxis and vending machines</td>
+</tr>
+<tr>
+<td>Where to buy</td>
+<td>Narita / Haneda airport; any JR station machine; convenience stores</td>
+</tr>
+<tr>
+<td>Initial deposit</td>
+<td>¥500 (refunded when returned at departure)</td>
+</tr>
+<tr>
+<td>Recommended initial load</td>
+<td>¥3,000–¥5,000 per adult</td>
+</tr>
+<tr>
+<td>Top-up</td>
+<td>Any JR or Tokyo Metro ticket machine, 7-Eleven</td>
+</tr>
+<tr>
+<td>Infant travel</td>
+<td>Children under 6 travel <strong>FREE</strong> on all Tokyo trains; no need for separate card</td>
+</tr>
+<tr>
+<td>Child 7 years</td>
+<td>Half-price children&rsquo;s IC card fare applies — purchase child&rsquo;s Suica at station counter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tokyo-metro-day-pass">Tokyo Metro Day Pass</h3>
+<p>If you plan heavy metro use (3+ trips per day), consider:</p>
+<table>
+<thead>
+<tr>
+<th>Pass</th>
+<th>Price</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tokyo Metro 24-Hour Pass</td>
+<td>¥600 adult, ¥300 child</td>
+<td>Day of heavy metro travel</td>
+</tr>
+<tr>
+<td>Tokyo Metro 72-Hour Pass</td>
+<td>¥1,500 adult, ¥750 child</td>
+<td>3 days of frequent metro use</td>
+</tr>
+<tr>
+<td>JR Tokyo Wide Pass</td>
+<td>¥15,000 adult</td>
+<td>Day trips to Nikko, Kamakura, Hakone</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getting-around-with-a-pram-stroller">Getting Around with a Pram / Stroller</h3>
+<ul>
+<li>All major Tokyo Metro and JR stations have <strong>elevators</strong> (look for blue elevator signs)</li>
+<li><strong>Priority seating sections</strong> on trains — most Japanese people will happily give up seats</li>
+<li><strong>Pram-friendly routes:</strong> Use the Ginza, Hibiya or Yamanote lines — wider carriages</li>
+<li>Tokyo Bus system also accommodates prams — use the middle door</li>
+</ul>
+<h3 id="taxis-uber">Taxis &amp; Uber</h3>
+<ul>
+<li>Taxis in Tokyo are clean, safe and drivers are professional</li>
+<li><strong>No tipping</strong> in Japan — taxis or restaurants</li>
+<li>Uber works in Tokyo and accepts international credit cards</li>
+<li>For family with infant + luggage: request a <strong>Minivan/Van</strong> option on Uber</li>
+</ul>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-12"></a></p>
+<h2 id="12-baby-child-travel-tips-for-japan">12. Baby &amp; Child Travel Tips for Japan</h2>
+<h3 id="for-the-7-month-infant">For the 7-Month Infant</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Tip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baby carrier</td>
+<td>Bring an ergonomic carrier (Ergobaby, BabyBjörn) — essential for teamLab, crowded temple walks, stairs</td>
+</tr>
+<tr>
+<td>Pram / Stroller</td>
+<td>A lightweight foldable stroller is ideal; Tokyo pavements are smooth and pram-friendly</td>
+</tr>
+<tr>
+<td>Diapers</td>
+<td>Pampers, Merries and Moony brands widely available in Japan — often better quality than Indian versions!</td>
+</tr>
+<tr>
+<td>Formula</td>
+<td>Carry 5–7 days supply from India; Japanese formula is available but different brands</td>
+</tr>
+<tr>
+<td>Baby food</td>
+<td>Kewpie brand Japanese baby food (stage 1 and 2) is safe and excellent; available at Matsumoto Kiyoshi pharmacy</td>
+</tr>
+<tr>
+<td>Nursing rooms</td>
+<td>Every shopping mall, department store, Disneyland, major station has a private nursing room (<em>jyunyuushitsu</em>)</td>
+</tr>
+<tr>
+<td>Hot water for formula</td>
+<td>Available free at convenience stores — just ask counter staff to provide warm water</td>
+</tr>
+<tr>
+<td>Baby bath</td>
+<td>Hotels provide baby bath on request; or use the hotel bathtub with warm water</td>
+</tr>
+<tr>
+<td>Sleep</td>
+<td>Bring baby&rsquo;s sleeping bag for consistent sleep environment in hotel</td>
+</tr>
+<tr>
+<td>Jet lag</td>
+<td>3.5 hours ahead of IST — relatively manageable; start adjusting sleep 2 days before departure</td>
+</tr>
+</tbody>
+</table>
+<h3 id="for-the-7-year-old-child">For the 7-Year-Old Child</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Tip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Passport</td>
+<td>Ensure child&rsquo;s passport is valid for at least 6 months beyond return date</td>
+</tr>
+<tr>
+<td>Height check</td>
+<td>Measure child&rsquo;s height before Disneyland visit — most exciting rides require 102 cm</td>
+</tr>
+<tr>
+<td>Entertainment</td>
+<td>Carry a tablet with downloaded shows for long flights; buy Disney merchandise as motivation</td>
+</tr>
+<tr>
+<td>Food</td>
+<td>Japanese food is generally mild and non-spicy; ramen, udon, sushi and fried chicken are popular with kids</td>
+</tr>
+<tr>
+<td>Safety</td>
+<td>Teach child to memorise hotel name (show them hotel card with address in Japanese)</td>
+</tr>
+<tr>
+<td>Activity kit</td>
+<td>Small backpack with colouring book, snacks, earphones — essential for flights and transit</td>
+</tr>
+<tr>
+<td>Pokemon/Anime</td>
+<td>If child likes anime, visit the <strong>Pokémon Center</strong> in Tokyo Station — a paradise for kids!</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-13"></a></p>
+<h2 id="13-packing-checklist">13. Packing Checklist</h2>
+<h3 id="documents-must-have">Documents (Must-Have)</h3>
+<ul>
+<li>&#9744; Passports (all 4 family members)</li>
+<li>&#9744; Japan Visa (in all passports)</li>
+<li>&#9744; Return flight tickets (printed or digital)</li>
+<li>&#9744; Hotel booking confirmations</li>
+<li>&#9744; Travel insurance documents</li>
+<li>&#9744; Emergency contacts list</li>
+<li>&#9744; Allergy cards in Japanese (if applicable)</li>
+<li>&#9744; Child&rsquo;s birth certificate (for infant)</li>
+<li>&#9744; Marriage certificate (if asked at immigration)</li>
+</ul>
+<h3 id="baby-essentials">Baby Essentials</h3>
+<ul>
+<li>&#9744; Sufficient diapers for travel + 2 extra days</li>
+<li>&#9744; Baby wipes (multiple packs)</li>
+<li>&#9744; Baby formula (7-day supply + extra)</li>
+<li>&#9744; Spoon and sippy cup</li>
+<li>&#9744; Changing mat (portable)</li>
+<li>&#9744; Baby carrier / Ergobaby</li>
+<li>&#9744; Foldable lightweight stroller</li>
+<li>&#9744; Baby clothes (layers for variable weather)</li>
+<li>&#9744; Baby sleep sack / sleeping bag</li>
+<li>&#9744; Baby first aid (thermometer, fever medicine, nasal aspirator)</li>
+<li>&#9744; Baby food (7–10 days supply from India)</li>
+<li>&#9744; Bottle steriliser (microwave type or UV steriliser)</li>
+</ul>
+<h3 id="clothing-personal-items">Clothing &amp; Personal Items</h3>
+<ul>
+<li>&#9744; Clothes for 5 days + 2 extras (mix and match)</li>
+<li>&#9744; Comfortable walking shoes (you will walk 10,000–15,000 steps daily)</li>
+<li>&#9744; Rain jacket / compact umbrella (Japan weather can change)</li>
+<li>&#9744; Lightweight jacket or fleece (evenings can be cool)</li>
+<li>&#9744; Socks without holes (you will remove shoes at many restaurants and temples!)</li>
+<li>&#9744; Universal adapter (Japan uses Type A 100V)</li>
+<li>&#9744; Power bank for mobile phones</li>
+</ul>
+<h3 id="electronics-accessories">Electronics &amp; Accessories</h3>
+<ul>
+<li>&#9744; Smartphone + international data SIM / pocket Wi-Fi booked</li>
+<li>&#9744; Camera or extra phone for photos</li>
+<li>&#9744; Travel adapter</li>
+<li>&#9744; Laptop/tablet (for children&rsquo;s entertainment on flight)</li>
+<li>&#9744; Earphones/headphones</li>
+</ul>
+<h3 id="medications">Medications</h3>
+<ul>
+<li>&#9744; Prescription medications for all family members (carry extra supply)</li>
+<li>&#9744; Infant paracetamol (Calpol/Tylenol)</li>
+<li>&#9744; Adult paracetamol, antacid, anti-diarrheal</li>
+<li>&#9744; Motion sickness tablets (for flight)</li>
+<li>&#9744; Antiseptic cream, band-aids</li>
+<li>&#9744; Oral rehydration salts (ORS)</li>
+<li>&#9744; Cold &amp; flu medicine for infant and child</li>
+</ul>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-14"></a></p>
+<h2 id="14-complete-budget-breakdown">14. Complete Budget Breakdown</h2>
+<h3 id="total-trip-cost-estimate-family-of-4-2-adults-1-child-1-infant">Total Trip Cost Estimate — Family of 4 (2 Adults, 1 Child, 1 Infant)</h3>
+<h4 id="flight-cost-round-trip">Flight Cost (Round Trip)</h4>
+<table>
+<thead>
+<tr>
+<th>Traveller</th>
+<th>Ticket Type</th>
+<th>Estimated Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adult 1</td>
+<td>Economy Round Trip (India–Tokyo)</td>
+<td>₹55,000–₹80,000</td>
+</tr>
+<tr>
+<td>Adult 2</td>
+<td>Economy Round Trip</td>
+<td>₹55,000–₹80,000</td>
+</tr>
+<tr>
+<td>Child (7 yrs)</td>
+<td>Economy Round Trip (100% adult fare on most routes)</td>
+<td>₹55,000–₹80,000</td>
+</tr>
+<tr>
+<td>Infant (7 months, lap infant)</td>
+<td>10–15% of adult fare (international)</td>
+<td>₹5,500–₹12,000</td>
+</tr>
+<tr>
+<td><strong>Total Flights</strong></td>
+<td>&nbsp;</td>
+<td><strong>₹1,70,500–₹2,52,000</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Budget option: Book via Air India, IndiGo codeshare or AirAsia 3–4 months in advance. Delhi–Tokyo is often the cheapest routing.</p>
+</blockquote>
+<h4 id="accommodation-4-nights">Accommodation (4 Nights)</h4>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Per Night</th>
+<th>Nights</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mid-range family room (e.g., Dormy Inn Asakusa)</td>
+<td>¥23,000 (~₹12,650)</td>
+<td>4</td>
+<td>¥92,000 (~₹50,600)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="daily-expenses-in-japan">Daily Expenses (In Japan)</h4>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Activities</th>
+<th>Estimated JPY</th>
+<th>Estimated INR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Day 1</td>
+<td>Arrival, airport transfer, SIM, IC card, dinner</td>
+<td>¥24,900</td>
+<td>₹13,695</td>
+</tr>
+<tr>
+<td>Day 2</td>
+<td>Asakusa, Ueno Zoo, meals, metro</td>
+<td>¥23,500</td>
+<td>₹12,925</td>
+</tr>
+<tr>
+<td>Day 3</td>
+<td>Tokyo Disneyland (full day)</td>
+<td>¥55,320–¥60,320</td>
+<td>₹30,426–₹33,176</td>
+</tr>
+<tr>
+<td>Day 4</td>
+<td>Odaiba, teamLab, Shibuya, meals</td>
+<td>¥38,300</td>
+<td>₹21,065</td>
+</tr>
+<tr>
+<td>Day 5</td>
+<td>Shinjuku Garden, shopping, airport transfer</td>
+<td>¥28,640</td>
+<td>₹15,752</td>
+</tr>
+<tr>
+<td><strong>Daily Total</strong></td>
+<td>&nbsp;</td>
+<td><strong>¥1,70,660–¥1,75,660</strong></td>
+<td><strong>~₹93,863–₹96,613</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="complete-budget-summary">Complete Budget Summary</h4>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Low Estimate</th>
+<th>High Estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flights (all 4 travellers)</td>
+<td>₹1,70,500</td>
+<td>₹2,52,000</td>
+</tr>
+<tr>
+<td>Accommodation (4 nights)</td>
+<td>₹50,600</td>
+<td>₹65,000</td>
+</tr>
+<tr>
+<td>Daily expenses in Japan</td>
+<td>₹93,863</td>
+<td>₹1,10,000</td>
+</tr>
+<tr>
+<td>Travel Insurance (family)</td>
+<td>₹8,000</td>
+<td>₹15,000</td>
+</tr>
+<tr>
+<td>Visa fees &amp; processing</td>
+<td>₹2,000</td>
+<td>₹4,000</td>
+</tr>
+<tr>
+<td>Miscellaneous (shopping, tips, extra)</td>
+<td>₹15,000</td>
+<td>₹30,000</td>
+</tr>
+<tr>
+<td><strong>GRAND TOTAL</strong></td>
+<td><strong>₹3,39,963</strong></td>
+<td><strong>₹4,76,000</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Average family budget: ₹3.5 lakh – ₹4.5 lakh</strong> for a comfortable 5-day first international trip to Tokyo, Japan.</p>
+</blockquote>
+<h4 id="budget-optimization-tips">Budget Optimization Tips</h4>
+<ul>
+<li>Book flights <strong>3–4 months in advance</strong> and travel mid-week (Tuesday/Wednesday) for lowest fares.</li>
+<li>Use <strong>Booking.com or Agoda</strong> for hotel deals; or book directly through hotel websites for best rates.</li>
+<li>Use <strong>IC cards</strong> instead of single-journey tickets to save 5–10% on metro fares.</li>
+<li>Eat at <strong>convenience stores and ramen shops</strong> for 1–2 meals daily — excellent quality at ¥500–¥800 per person.</li>
+<li>Buy <strong>Disneyland tickets online</strong> (KKday/Klook in INR) — no extra currency conversion loss.</li>
+<li><strong>Avoid taxi</strong> except for baby-critical situations — Tokyo trains are safe, punctual and far cheaper.</li>
+<li>Buy <strong>duty-free</strong> at Narita/Haneda for cosmetics, chocolates and Japanese whisky.</li>
+<li>Look for <strong>family discounts:</strong> Many Tokyo attractions offer 2+1 family passes or free child entry under 6.</li>
+</ul>
+<hr />
+<div class="section-break"></div>
+<p><a name="sec-15"></a></p>
+<h2 id="15-emergency-contacts-important-information">15. Emergency Contacts &amp; Important Information</h2>
+<h3 id="emergency-numbers-in-japan">Emergency Numbers in Japan</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Number</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Police</td>
+<td>110</td>
+<td>For theft, crime, getting lost</td>
+</tr>
+<tr>
+<td>Fire &amp; Ambulance</td>
+<td>119</td>
+<td>Medical emergencies, fire</td>
+</tr>
+<tr>
+<td>Japan Helpline (English)</td>
+<td>0120-461-997</td>
+<td>24/7 English helpline for foreigners in Japan</td>
+</tr>
+<tr>
+<td>Tokyo English Life Line</td>
+<td>03-5774-0992</td>
+<td>English counseling/assistance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="indian-embassy-consulate-in-japan">Indian Embassy &amp; Consulate in Japan</h3>
+<table>
+<thead>
+<tr>
+<th>Office</th>
+<th>Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Embassy of India, Tokyo</td>
+<td>2-2-11 Kudan Minami, Chiyoda-ku, Tokyo 102-0074</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>+81-3-3262-2391</td>
+</tr>
+<tr>
+<td>Emergency (after hours)</td>
+<td>+81-80-3427-7238</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>cons.tokyo@mea.gov.in</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hospitals-with-english-speaking-staff-tokyo">Hospitals with English-Speaking Staff (Tokyo)</h3>
+<table>
+<thead>
+<tr>
+<th>Hospital</th>
+<th>Location</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>St. Luke&rsquo;s International Hospital</td>
+<td>Tsukiji, Tokyo</td>
+<td>Best for English-speaking; excellent paediatric department</td>
+</tr>
+<tr>
+<td>Tokyo Medical and Surgical Clinic</td>
+<td>Minato-ku, Tokyo</td>
+<td>Highly recommended for foreign visitors</td>
+</tr>
+<tr>
+<td>International Clinic Tokyo</td>
+<td>Roppongi</td>
+<td>English-speaking GPs; walk-in available</td>
+</tr>
+<tr>
+<td>NTT Medical Center</td>
+<td>Gotanda</td>
+<td>Good emergency department</td>
+</tr>
+</tbody>
+</table>
+<h3 id="useful-japanese-phrases">Useful Japanese Phrases</h3>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Japanese</th>
+<th>Phonetic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Help!</td>
+<td>助けて！</td>
+<td>Tasukete!</td>
+</tr>
+<tr>
+<td>I need a doctor</td>
+<td>医者が必要です</td>
+<td>Isha ga hitsuyou desu</td>
+</tr>
+<tr>
+<td>Baby is sick</td>
+<td>赤ちゃんが病気です</td>
+<td>Akachan ga byoki desu</td>
+</tr>
+<tr>
+<td>Where is the toilet?</td>
+<td>トイレはどこですか？</td>
+<td>Toire wa doko desu ka?</td>
+</tr>
+<tr>
+<td>Where is the nursing room?</td>
+<td>授乳室はどこですか？</td>
+<td>Jyunyuushitsu wa doko desu ka?</td>
+</tr>
+<tr>
+<td>Do you have a high chair?</td>
+<td>ベビーチェアはありますか？</td>
+<td>Bebi-chea wa arimasu ka?</td>
+</tr>
+<tr>
+<td>Thank you</td>
+<td>ありがとうございます</td>
+<td>Arigatou gozaimasu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="travel-insurance-what-must-be-covered">Travel Insurance — What Must Be Covered</h3>
+<ul>
+<li>Medical evacuation (minimum USD 100,000)</li>
+<li>Hospitalisation (minimum USD 50,000 per person)</li>
+<li>Trip cancellation and delay coverage</li>
+<li>Lost baggage</li>
+<li>Personal liability</li>
+<li><strong>Confirm infant (7 months) is included</strong> — some policies exclude newborns/infants under 1 year; read policy carefully</li>
+</ul>
+<h3 id="recommended-travel-insurance-providers-india">Recommended Travel Insurance Providers (India)</h3>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Product</th>
+<th>Approx. Premium (Family)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tata AIG</td>
+<td>Travel Guard</td>
+<td>₹5,000–₹9,000 for 5-day family trip</td>
+</tr>
+<tr>
+<td>Bajaj Allianz</td>
+<td>Travel Elite</td>
+<td>₹4,500–₹8,000</td>
+</tr>
+<tr>
+<td>HDFC ERGO</td>
+<td>My Travel Insurance</td>
+<td>₹4,000–₹7,500</td>
+</tr>
+<tr>
+<td>ICICI Lombard</td>
+<td>iTravel</td>
+<td>₹4,500–₹8,500</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>This itinerary was professionally prepared for a first-time international family traveller. All prices are approximate and based on 2024–2025 data. Prices for Tokyo Disneyland and attractions are subject to change — always verify on official websites before booking. Exchange rate used: ¥100 ≈ ₹55 INR.</em></p>
+<p><em>Safe travels and enjoy your magical family adventure in Japan!</em> 🇯🇵✈️👨‍👩‍👧‍👶</p>
+<div id="page-footer">
+    Page <pdf:pagenumber/> of <pdf:pagecount/>
+    <span class="right-text">Japan Family Itinerary 2026 &#127471;&#127477;</span>
+</div>
+</body>
+</html>
